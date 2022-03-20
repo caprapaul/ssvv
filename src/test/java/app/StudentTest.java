@@ -29,9 +29,6 @@ public class StudentTest {
         StudentXMLRepository fileRepository1 = new StudentXMLRepository(studentValidator, "test-data/" + "studenti.xml");
         TemaXMLRepository fileRepository2 = new TemaXMLRepository(temaValidator, "test-data/" + "teme.xml");
         NotaXMLRepository fileRepository3 = new NotaXMLRepository(notaValidator, "test-data/" + "note.xml");
-        fileRepository1.writeToXmlFile();
-        fileRepository2.writeToXmlFile();
-        fileRepository3.writeToXmlFile();
         service = new Service(fileRepository1, fileRepository2, fileRepository3);
     }
 
@@ -73,5 +70,40 @@ public class StudentTest {
         int result = service.saveStudent("1", "Nume", 936);
 
         assertEquals(1, result);
+    }
+
+    @Test
+    public void addStudent_ValidInput_Success() {
+        var result = service.saveStudent("1", "Nume", 937);
+
+        assertEquals(1, result);
+    }
+
+    @Test
+    public void addStudent_EmptyStringId_ValidationError() {
+        var result = service.saveStudent("", "Nume", 937);
+
+        assertEquals(0, result);
+    }
+
+    @Test
+    public void addStudent_NullId_ValidationError() {
+        var result = service.saveStudent(null, "Nume", 937);
+
+        assertEquals(0, result);
+    }
+
+    @Test
+    public void addStudent_EmptyStringNume_ValidationError() {
+        var result = service.saveStudent("1", "", 937);
+
+        assertEquals(0, result);
+    }
+
+    @Test
+    public void addStudent_NullNume_ValidationError() {
+        var result = service.saveStudent("1", null, 937);
+
+        assertEquals(0, result);
     }
 }
