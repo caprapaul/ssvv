@@ -56,7 +56,7 @@ public abstract class AbstractXMLRepository<ID, E extends HasID<ID>> extends Abs
         }
     }
 
-    protected void writeToXmlFile() {
+    public void writeToXmlFile() {
         try {
             Document XMLdocument = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
             Element root = XMLdocument.createElement("Entitati");

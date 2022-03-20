@@ -2,6 +2,7 @@ package app.service;
 
 import app.domain.*;
 import app.repository.*;
+import app.validation.ValidationException;
 
 import java.time.LocalDate;
 import java.time.temporal.WeekFields;
@@ -26,11 +27,19 @@ public class Service {
 
     public int saveStudent(String id, String nume, int grupa) {
         Student student = new Student(id, nume, grupa);
-        Student result = studentXmlRepo.save(student);
+        Student result;
+
+        try {
+            result = studentXmlRepo.save(student);
+        }
+        catch (ValidationException e) {
+            return 0;
+        }
 
         if (result == null) {
             return 1;
         }
+
         return 0;
     }
 
