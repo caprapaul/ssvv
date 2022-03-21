@@ -25,6 +25,8 @@ public class Service {
 
     public Iterable<Nota> findAllNote() { return notaXmlRepo.findAll(); }
 
+    // 0 - bad
+    // 1 - good
     public int saveStudent(String id, String nume, int grupa) {
         Student student = new Student(id, nume, grupa);
         Student result;
@@ -43,6 +45,8 @@ public class Service {
         return 0;
     }
 
+    // 0 - bad
+    // 1 - good
     public int saveTema(String id, String descriere, int deadline, int startline) {
         Tema tema = new Tema(id, descriere, deadline, startline);
         Tema result = temaXmlRepo.save(tema);
