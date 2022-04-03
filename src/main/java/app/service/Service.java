@@ -49,7 +49,14 @@ public class Service {
     // 1 - good
     public int saveTema(String id, String descriere, int deadline, int startline) {
         Tema tema = new Tema(id, descriere, deadline, startline);
-        Tema result = temaXmlRepo.save(tema);
+        Tema result;
+
+        try {
+            result = temaXmlRepo.save(tema);
+        }
+        catch(ValidationException e){
+            return 0;
+        }
 
         if (result == null) {
             return 1;

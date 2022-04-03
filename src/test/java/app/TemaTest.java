@@ -50,4 +50,25 @@ public class TemaTest {
 
         assertEquals(0, result);
     }
+
+    @Test
+    public void givenNullId_whenAddAssignment_thenReturnZero() {
+        int result = service.saveTema(null, "Descriere", 15, 2);
+
+        assertEquals(0, result);
+    }
+
+    @Test
+    public void givenNullDescriere_whenAddAssignment_thenReturnZero() {
+        int result = service.saveTema("1", null, 15, 2);
+
+        assertEquals(0, result);
+    }
+
+    @Test
+    public void givenOutOfLowerRangeStartline_whenAddAssignment_thenReturnZero() {
+        int result = service.saveTema("1", "Descriere", 15, 0);
+
+        assertEquals(0, result);
+    }
 }
