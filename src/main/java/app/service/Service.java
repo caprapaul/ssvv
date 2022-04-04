@@ -7,6 +7,8 @@ import app.validation.ValidationException;
 import java.time.LocalDate;
 import java.time.temporal.WeekFields;
 import java.util.Locale;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 public class Service {
     private StudentXMLRepository studentXmlRepo;
@@ -92,6 +94,13 @@ public class Service {
         if (result == null) {
             return 0;
         }
+
+        var note = StreamSupport.stream(notaXmlRepo.findAll().spliterator(), false)
+                .filter(nota -> nota.getID().getObject1().equals(id))
+                .collect(Collectors.toList());
+
+        note.forEach(nota -> notaXmlRepo.delete(nota.getID()));
+
         return 1;
     }
 
@@ -101,6 +110,13 @@ public class Service {
         if (result == null) {
             return 0;
         }
+
+        var note = StreamSupport.stream(notaXmlRepo.findAll().spliterator(), false)
+                .filter(nota -> nota.getID().getObject2().equals(id))
+                .collect(Collectors.toList());
+
+        note.forEach(nota -> notaXmlRepo.delete(nota.getID()));
+
         return 1;
     }
 
