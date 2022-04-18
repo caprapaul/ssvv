@@ -1,0 +1,158 @@
+Index: maria.txt
+===================================================================
+diff --git a/maria.txt b/maria.txt
+--- a/maria.txt	
++++ b/maria.txt	
+@@ -1,0 +1,15 @@
++Tema: 1
++Nota: 8.0
++Predata in saptamana: 7
++Deadline: 7
++Feedback: tare
++
++Tema: 2
++Nota: 1.0
++Predata in saptamana: 13
++Deadline: 8
++Feedback: tare
++
++Tema: 3
++Nota: 1.0
++Predata in saptamana: 13
+Index: note.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\r\n<Entitati>\r\n    <nota IDStudent=\"1\" IDTema=\"1\">\r\n        <Nota>10.0</Nota>\r\n        <SaptamanaPredare>7</SaptamanaPredare>\r\n        <Feedback>done</Feedback>\r\n    </nota>\r\n    <nota IDStudent=\"1\" IDTema=\"2\">\r\n        <Nota>7.5</Nota>\r\n        <SaptamanaPredare>9</SaptamanaPredare>\r\n        <Feedback>done</Feedback>\r\n    </nota>\r\n</Entitati>\r\n
+===================================================================
+diff --git a/note.xml b/note.xml
+--- a/note.xml	
++++ b/note.xml	
+@@ -5,9 +5,24 @@
+         <SaptamanaPredare>7</SaptamanaPredare>
+         <Feedback>done</Feedback>
+     </nota>
++    <nota IDStudent="5" IDTema="5">
++        <Nota>8.0</Nota>
++        <SaptamanaPredare>13</SaptamanaPredare>
++        <Feedback>tare</Feedback>
++    </nota>
+     <nota IDStudent="1" IDTema="2">
+         <Nota>7.5</Nota>
+         <SaptamanaPredare>9</SaptamanaPredare>
+         <Feedback>done</Feedback>
++    </nota>
++    <nota IDStudent="4" IDTema="1">
++        <Nota>1.0</Nota>
++        <SaptamanaPredare>13</SaptamanaPredare>
++        <Feedback>tare</Feedback>
++    </nota>
++    <nota IDStudent="5" IDTema="2">
++        <Nota>7.0</Nota>
++        <SaptamanaPredare>8</SaptamanaPredare>
++        <Feedback>TARE</Feedback>
+     </nota>
+ </Entitati>
+Index: teme.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2#xml#8#7\r\n1#file#7#6\r\n2#xml#8#7\r\n1#file#7#6\r\n2#xml#8#7\r\n1#file#7#6\r\n
+===================================================================
+diff --git a/teme.txt b/teme.txt
+--- a/teme.txt	
++++ b/teme.txt	
+@@ -4,3 +4,15 @@
+ 1#file#7#6
+ 2#xml#8#7
+ 1#file#7#6
++2#xml#8#7
++1#file#7#6
++2#xml#8#7
++1#file#7#6
++2#xml#8#7
++1#file#7#6
++2#xml#8#7
++1#file#7#6
++2#xml#8#7
++1#file#7#6
++2#xml#8#7
++1#file#7#6
+Index: studenti.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\r\n<Studenti>\r\n    <student ID=\"1\">\r\n        <Nume>Ana</Nume>\r\n        <Grupa>221</Grupa>\r\n    </student>\r\n    <student ID=\"2\">\r\n        <Nume>Maria</Nume>\r\n        <Grupa>222</Grupa>\r\n    </student>\r\n    <student ID=\"4\">\r\n        <Nume>Ion</Nume>\r\n        <Grupa>227</Grupa>\r\n    </student>\r\n</Studenti>\r\n
+===================================================================
+diff --git a/studenti.xml b/studenti.xml
+--- a/studenti.xml	
++++ b/studenti.xml	
+@@ -1,15 +1,15 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+-<Studenti>
++<Entitati>
+     <student ID="1">
+         <Nume>Ana</Nume>
+         <Grupa>221</Grupa>
+-    </student>
+-    <student ID="2">
+-        <Nume>Maria</Nume>
+-        <Grupa>222</Grupa>
+     </student>
+     <student ID="4">
+         <Nume>Ion</Nume>
+         <Grupa>227</Grupa>
+     </student>
+-</Studenti>
++    <student ID="5">
++        <Nume>Guru Unguru</Nume>
++        <Grupa>936</Grupa>
++    </student>
++</Entitati>
+Index: studenti.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2#maria#222\r\n1#ana#221\r\n2#maria#222\r\n1#ana#221\r\n2#maria#222\r\n1#ana#221\r\n
+===================================================================
+diff --git a/studenti.txt b/studenti.txt
+--- a/studenti.txt	
++++ b/studenti.txt	
+@@ -4,3 +4,15 @@
+ 1#ana#221
+ 2#maria#222
+ 1#ana#221
++2#maria#222
++1#ana#221
++2#maria#222
++1#ana#221
++2#maria#222
++1#ana#221
++2#maria#222
++1#ana#221
++2#maria#222
++1#ana#221
++2#maria#222
++1#ana#221
+Index: teme.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\r\n<Teme>\r\n    <tema ID=\"1\">\r\n        <Descriere>File</Descriere>\r\n        <Deadline>7</Deadline>\r\n        <Startline>6</Startline>\r\n    </tema>\r\n    <tema ID=\"2\">\r\n        <Descriere>XML</Descriere>\r\n        <Deadline>8</Deadline>\r\n        <Startline>7</Startline>\r\n    </tema>\r\n    <tema ID=\"3\">\r\n        <Descriere>gui</Descriere>\r\n        <Deadline>9</Deadline>\r\n        <Startline>7</Startline>\r\n    </tema>\r\n</Teme>\r\n
+===================================================================
+diff --git a/teme.xml b/teme.xml
+--- a/teme.xml	
++++ b/teme.xml	
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+-<Teme>
++<Entitati>
+     <tema ID="1">
+         <Descriere>File</Descriere>
+         <Deadline>7</Deadline>
+@@ -15,4 +15,9 @@
+         <Deadline>9</Deadline>
+         <Startline>7</Startline>
+     </tema>
+-</Teme>
++    <tema ID="5">
++        <Descriere>Predaati lucrarea de licenta</Descriere>
++        <Deadline>13</Deadline>
++        <Startline>2</Startline>
++    </tema>
++</Entitati>
