@@ -37,6 +37,21 @@ public class SearchByKeywordStory {
         anna.should_see_definition("An edible fruit produced by the pear tree, similar to an apple but elongated towards the stem.");
     }
 
+    @Test
+    public void searching_by_keyword_fruit_should_display_the_corresponding_article() {
+        anna.is_the_home_page();
+        anna.looks_for("fruit");
+        anna.should_see_definition("In general, a product of plant growth useful to man or animals");
+    }
+
+    @Test
+    public void searching_by_keyword_cloud_should_display_the_corresponding_article() {
+        anna.is_the_home_page();
+        anna.looks_for("cloud");
+        anna.should_see_definition("Any mass of dust, steam or smoke resembling such a mass.");
+    }
+
+
     @Pending @Test
     public void searching_by_ambiguious_keyword_should_display_the_disambiguation_page() {
     }
