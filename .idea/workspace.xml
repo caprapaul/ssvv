@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="449c5813-2f7f-4bd2-9dc6-46f5a8926e1a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/externalDependencies.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LabAssiAsseRequirements .pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MonitorizareTemeLaboratorV01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_AnalysisDesignDocument_LabAssiAsseProjectV01.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_RequirementsDocument_LabAssiAsseProjectV01.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ana.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maria.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/note.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/note.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/console/UI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/domain/HasID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/domain/Nota.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/domain/Pair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/domain/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/domain/Tema.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/repository/AbstractCRUDRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/repository/AbstractFileRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/repository/AbstractXMLRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/repository/CRUDRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/repository/NotaFileRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/repository/NotaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/repository/NotaXMLRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/repository/StudentFileRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/repository/StudentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/repository/StudentXMLRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/repository/TemaFileRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/repository/TemaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/repository/TemaXMLRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/service/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/validation/NotaValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/validation/StudentValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/validation/TemaValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/validation/ValidationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/validation/Validator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/app/IncrementalNotaTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/app/NotaTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/app/StudentTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/app/TemaTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/app/TestTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/studenti.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/studenti.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/teme.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-data/note.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-data/studenti.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-data/teme.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vasile.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="27xNcYIqqSCE9jWauITgzVaIcGP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="449c5813-2f7f-4bd2-9dc6-46f5a8926e1a" name="Changes" comment="" />
+      <created>1650257864301</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650257864301</updated>
+      <workItem from="1650257868540" duration="101000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
